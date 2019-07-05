@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let num = 0;
+        function isPrime() {
+            for (let i = 0; i < 30; i++) {
+                if (checkPrime(num)){
+                    document.write(num + " ");
+                    console.log(checkPrime(num));
+                }
+                num++;
+                console.log(num);
+            }
+        }
+        function checkPrime(num) {
+            if (num <2){
+                return false;
+            }
+            for (let i = 2; i < num; i++) {
+                if (num % i == 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        isPrime();
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyyển đỗi giữa Feet và Meters</title>
+</head>
+<body>
+    <input type="number" id="inputNum"> = <span id="result"></span><br>
+    <button onclick="FeetToMeter()">Feet to Meters</button>
+    <button onclick="MeterToFeet()">Meters to Feet</button>
+
+    <script>
+
+        function FeetToMeter(Feet) {
+            Feet = parseFloat(document.getElementById('inputNum').value);
+            let Meter = 0.305 * Feet;
+            document.getElementById('result').innerHTML = Meter + " meter";
+        }
+        function MeterToFeet(Meter) {
+            Meter = parseFloat(document.getElementById('inputNum').value);
+            let Feet = 3.279 * Meter;
+            document.getElementById('result').innerHTML = Feet + " feet";
+        }
+    </script>
+</body>
+</html>

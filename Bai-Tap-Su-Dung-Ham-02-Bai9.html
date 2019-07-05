@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let textArray = "sdnfkhdgs';afgkeojgdasjkbdhfusdjhfghjs";
+        let text = prompt('Nhập ký tự bất kỳ : ');
+        let count = 0;
+        for (i = 0; i < textArray.length; i++) {
+            if (text == textArray[i]){
+                count++;
+            }
+        }
+        if(count!=0){
+            alert('Số lần xuất hiện ký tự là : ' + count);
+        }else{
+            alert(-1);
+        }
+    </script>
+</body>
+</html>
